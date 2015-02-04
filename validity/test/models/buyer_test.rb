@@ -22,7 +22,7 @@ class BuyerTest < ActiveSupport::TestCase
     assert buyer(18.years).vote?, "should be able to vote (but likely won't)"
   end
 
-  test "cannot vote if 18" do
+  test "cannot vote if 16" do
     refute buyer(16.years).vote?, "can't vote yet"
   end
 
