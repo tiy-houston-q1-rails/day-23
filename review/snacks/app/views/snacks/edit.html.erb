@@ -1,0 +1,8 @@
+
+<h1>Editing: <%= @snack.name %></h1>
+
+<%= simple_form_for @snack do |f| %>
+  <%= f.input :name %>
+  <%= f.input :photo_url %>
+  <%= f.submit class: "btn btn-default btn-lg" %>
+<% end %>

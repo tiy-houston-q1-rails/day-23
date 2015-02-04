@@ -1,0 +1,9 @@
+<h1><%= @snack.name %></h1>
+<%= image_tag @snack.photo_url, class: "detail-snack" %>
+
+<div>
+  <%= link_to "Edit this snack", edit_snack_path(id: @snack.id), class: "btn btn-default" %>
+  <%= link_to  @snack, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger" do %>
+    <i class="fa fa-exclamation-triangle"></i> Delete
+  <% end %>
+</div>

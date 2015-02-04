@@ -1,0 +1,10 @@
+
+<div>
+  <%= link_to "New Snack", new_snack_path %>
+</div>
+
+<% @snacks.each do |snack| %>
+  <li>
+    <%= link_to snack.name, snack_path(id: snack.id) %>
+  </li>
+<% end %>
